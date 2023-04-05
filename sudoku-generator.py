@@ -5,6 +5,7 @@ def easypuzzles():
     res = []
     res2 = []
     res3 = []
+    res4 = []
     counter = 0
 
     with open('Dataset.txt') as f:
@@ -41,7 +42,7 @@ def easypuzzles():
     res3 = [res3[i:i+81] for i in range(0, len(res3), 81)]
 
     for i in range(len(res3)):
-        for j in range(35):
+        for j in range(40):
             index = random.randint(0, len(res3[i])-1)
             res3[i] = res3[i][:index] + '0' + res3[i][index+1:]
 
@@ -57,6 +58,7 @@ def mediumpuzzles():
     res = []
     res2 = []
     res3 = []
+    res4 = []
     counter = 0
 
     with open('Dataset.txt') as f:
@@ -94,7 +96,7 @@ def mediumpuzzles():
     res3 = [res3[i:i+81] for i in range(0, len(res3), 81)]
 
     for i in range(len(res3)):
-        for j in range(27):
+        for j in range(60):
             index = random.randint(0, len(res3[i])-1)
             res3[i] = res3[i][:index] + '0' + res3[i][index+1:]
 
@@ -109,6 +111,7 @@ def Hardpuzzles():
     res = []
     res2 = []
     res3 = []
+    res4 = []
     counter = 0
 
     with open('Dataset.txt') as f:
@@ -145,7 +148,7 @@ def Hardpuzzles():
     res3 = [res3[i:i+81] for i in range(0, len(res3), 81)]
 
     for i in range(len(res3)):
-        for j in range(20):
+        for j in range(70):
             index = random.randint(0, len(res3[i])-1)
             res3[i] = res3[i][:index] + '0' + res3[i][index+1:]
 
