@@ -5,7 +5,6 @@ def easypuzzles():
     res = []
     res2 = []
     res3 = []
-    res4 = []
     counter = 0
 
     with open('Dataset.txt') as f:
@@ -58,7 +57,6 @@ def mediumpuzzles():
     res = []
     res2 = []
     res3 = []
-    res4 = []
     counter = 0
 
     with open('Dataset.txt') as f:
@@ -111,7 +109,6 @@ def Hardpuzzles():
     res = []
     res2 = []
     res3 = []
-    res4 = []
     counter = 0
 
     with open('Dataset.txt') as f:
