@@ -41,17 +41,21 @@ def easypuzzles():
     # add a new line every 81 characters
     res3 = [res3[i:i+81] for i in range(0, len(res3), 81)]
 
+    res4  = res3.copy()
+
+    
+
     for i in range(len(res3)):
         for j in range(40):
             index = random.randint(0, len(res3[i])-1)
             res3[i] = res3[i][:index] + '0' + res3[i][index+1:]
 
-    #write each element in res3 to a new line in a new file
+    #write each element in res3 and res4 to a new line in a new file, separated by a comma
     with open('Easy.txt', 'w') as f:
-        for item in res3:
-            f.write(item + '\n')
+        for i in range(len(res3)):
+            f.write(res3[i] + ',' + res4[i] + '\n')
 
-    return res3
+    return res4
 
 def mediumpuzzles():
 
@@ -95,15 +99,17 @@ def mediumpuzzles():
     # add a new line every 81 characters
     res3 = [res3[i:i+81] for i in range(0, len(res3), 81)]
 
+    res4  = res3.copy()
+
     for i in range(len(res3)):
         for j in range(60):
             index = random.randint(0, len(res3[i])-1)
             res3[i] = res3[i][:index] + '0' + res3[i][index+1:]
 
-    #write each element in res3 to a new line in a new file
+    #write each element in res3 and res4 to a new line in a new file, separated by a comma
     with open('Medium.txt', 'w') as f:
-        for item in res3:
-            f.write(item + '\n')
+        for i in range(len(res3)):
+            f.write(res3[i] + ',' + res4[i] + '\n')
 
     return res3
 
@@ -147,15 +153,18 @@ def Hardpuzzles():
     # add a new line every 81 characters
     res3 = [res3[i:i+81] for i in range(0, len(res3), 81)]
 
+    res4  = res3.copy()
+
+
     for i in range(len(res3)):
         for j in range(70):
             index = random.randint(0, len(res3[i])-1)
             res3[i] = res3[i][:index] + '0' + res3[i][index+1:]
 
-    #write each element in res3 to a new line in a new file
+    #write each element in res3 and res4 to a new line in a new file, separated by a comma
     with open('Hard.txt', 'w') as f:
-        for item in res3:
-            f.write(item + '\n')
+        for i in range(len(res3)):
+            f.write(res3[i] + ',' + res4[i] + '\n')
 
     return res3
 
